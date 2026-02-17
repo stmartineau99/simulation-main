@@ -19,7 +19,7 @@ Requires cloning three repositories. Make sure they are cloned in separate direc
    
 ```bash
 # clone this repository
-git clone https://github.com/stmartineau99/simulation-main.git
+git clone https://github.com/computational-cell-analytics/simulation-main.git
 
 # clone polnet-synaptic repository
 git clone https://github.com/computational-cell-analytics/polnet-synaptic.git
