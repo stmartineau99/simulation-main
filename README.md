@@ -39,14 +39,14 @@ cd ../faket-polnet && pip install -e .
 ```
 ## Setup
 
-**1. Setup config.**
+### 1. Setup config.
 
 See example config at `configs/czii.toml`. 
 
 The config specifies parameters for both [polnet-synaptic](https://github.com/computational-cell-analytics/polnet-synaptic/tree/main/scripts) and [faket-polnet](https://github.com/computational-cell-analytics/faket-polnet/tree/main); check those repositories for more details.
 
 
-**2. Setup directory structure.**
+### 2. Setup directory structure.
 
 Setup FakET `base_dir` with `style_tomograms_{style_index}`. 
 
@@ -54,7 +54,7 @@ In `base_dir`, PolNet will create a directory called `simulation_dir_{simulation
 
 ## Usage
 
-**1. Download pretrained weights**
+### 1. Download pretrained weights.
 
 Faket uses a pretrained VGG19 model for neural style transfer.
 
@@ -68,7 +68,7 @@ EOF
 ```
 The weights will be cached locally, and SLURM will automatically locate the cached file.
 
-**2. Running the pipeline.**
+### 2. Running the pipeline.
 
 After defining your config you can run the integregated pipeline using the example SLURM script at `slurm_scripts/sbatch_simulation.sh`.
 
