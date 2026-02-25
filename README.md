@@ -1,4 +1,7 @@
 # An integrated pipeline for cryo-ET data simulation with PolNet and FakET.
+This repository provides a simulation-pipeline for cryo-ET data generation. All simulation parameters are controlled through configuration file, enabling reproducbile and scalable experiments. 
+
+This repository also provides example SLURM scripts for running the pipeline on HPC systems. 
 
 ## Overview
 The original source code used in our simulation pipeline:
