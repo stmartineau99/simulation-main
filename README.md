@@ -6,7 +6,7 @@ The original source code used in our simulation pipeline:
    Generate tomograms from specified features. 
 
 2. [FakET](https://github.com/paloha/faket)
-   Noise addition using FakET style transfer.
+   Noise addition using neural style transfer.
    
 3. 3D reconstruction with IMOD
    
