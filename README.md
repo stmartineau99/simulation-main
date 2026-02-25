@@ -11,7 +11,7 @@ The original source code used in our simulation pipeline:
 3. 3D reconstruction with IMOD
    
 ## Installation
-These are instructions for installing both PolNet and FakET in one `simulation-main` environment. Requires cloning three repositories. Make sure they are cloned in separate directories. 
+These are instructions for installing both PolNet and FakET in the `simulation-main` environment. Requires cloning three repositories. Make sure they are cloned in separate directories. 
 
 1. simulation-main
 2. [polnet-synaptic](https://github.com/computational-cell-analytics/polnet-synaptic/tree/main/scripts)
@@ -46,4 +46,4 @@ cd ../faket-polnet && pip install -e .
 
 After defining your config you can run the integregated pipeline using the example SLURM script at `slurm_scripts/sbatch_simulation.sh`.
 
-Alternatively you can create a folder containing multiple configs. I have created a submission script which will create one SLURM job for each config in a directory; see `slurm_scripts/submit_simulation.sh`.
+Alternatively, you can create a folder containing multiple configs. I have created a submission script which will create one SLURM job for each config in a directory; see `slurm_scripts/submit_simulation.sh`.
