@@ -2,7 +2,6 @@
 import subprocess
 import argparse
 import json
-import sys
 
 def parse_sacct(job_id, out_path=None, is_array=False):
     result = subprocess.run([
@@ -69,7 +68,7 @@ def parse_sacct(job_id, out_path=None, is_array=False):
         }
  
     if out_path is None:
-        out_path = f"./slurm-{job_id}_stats.json"
+        out_path = f"./slurm-{job_id}_metrics.json"
 
     with open(out_path, "w") as f:
         json.dump(output, f, indent=4)
