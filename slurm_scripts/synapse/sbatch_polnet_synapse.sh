@@ -2,13 +2,12 @@
 #SBATCH -p standard96s:shared
 #SBATCH --job-name=polnet_run7
 #SBATCH -o data/simulation/slurm_logs/slurm-%j_%x.out
-#SBATCH -t 1:00:00
+#SBATCH -t 2:00:00
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=40G
-#SBATCH --qos=2h
  
-CCONFIG=$1
+CONFIG=$1
 source ~/.bashrc
 micromamba activate -n simulation-main
 
