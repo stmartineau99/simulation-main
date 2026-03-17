@@ -2,7 +2,6 @@
 out_dir = "/projects/extern/nhr/nhr_ni/nim00020/dir.project/sage/data/simulation/testing/run7/simulation_dir_0"
 root_path = "/projects/extern/nhr/nhr_ni/nim00020/dir.project/sage/source/polnet-synaptic/data/synapse"
 seed = 10
-ntomos = 3
 voi_vsize = 10 
 voi_shape = [630, 630, 184]
 
@@ -41,7 +40,7 @@ base_dir = "/projects/extern/nhr/nhr_ni/nim00020/dir.project/sage/data/simulatio
 simulation_index = 0
 micrograph_index = 0
 train_dir_index = 0
-detector_snr = [0.3, 0.4]
+detector_snr = [0.60, 0.65]
 tilt_start = -54
 tilt_stop = 54
 tilt_step = 3

@@ -1,8 +1,26 @@
 #!/bin/bash
+############################################################################################
+# Description:
+#   Pipeline Step 2: SLURM job script for noise edition using FakET.
+#
+# Usage:
+#   - sbatch sbatch_faket_synapse.sh <config>
+#
+# Resources requested:
+#   - Partition:      grete:interactive
+#   - Time limit:     2 hours
+#   - CPUs per task:  8
+#   - Memory:         20G
+#   - GPU:            1g.20gb
+#
+# Notes:
+#   - IMOD module is loaded for 3D reconstruction. 
+############################################################################################
+
 #SBATCH -p grete:interactive
-#SBATCH --job-name=faket_run7
+#SBATCH --job-name=faket
 #SBATCH -o data/simulation/slurm_logs/slurm-%j_%x.out
-#SBATCH -t 20:00
+#SBATCH -t 1:00:00
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=20G
@@ -22,7 +40,7 @@ source $IMOD_DIR/IMOD-linux.sh
 TARGET_DIR=/projects/extern/nhr/nhr_ni/nim00020/dir.project/sage/data/simulation/testing/run7/style_tomograms_0
 
 if [ ! -e "$TARGET_DIR" ]; then
-    ln -s /projects/extern/nhr/nhr_ni/nim00020/dir.project/sage/data/synapse/cropped "$TARGET_DIR"
+    ln -s /projects/extern/nhr/nhr_ni/nim00020/dir.project/sage/data/synapse/tomos "$TARGET_DIR"
 fi
 
 SCRIPT_DIR=/projects/extern/nhr/nhr_ni/nim00020/dir.project/sage/source/faket-polnet
